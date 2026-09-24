@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ event.name }} · Riftbuilder{% endblock %}
+{% block content %}
+<header class="top">
+  <div>
+    <h1>{{ event.name }}</h1>
+    <p class="muted">{{ event.store }}{% if round %} · Ronda {{ round.number }}{% endif %}</p>
+  </div>
+  {% include "_timer.html" %}
+</header>
+
+<form class="search" method="get">
+  <input name="q" value="{{ q }}" placeholder="Busca tu nick" autocomplete="off" enterkeyhint="search">
+  {% if q %}<a href="?" class="clear">Ver todos</a>{% endif %}
+</form>
+
+{% if not round %}
+  <p class="empty">Todavía no hay emparejamientos. Se actualiza solo.</p>
+{% elif not matches %}
+  <p class="empty">Ningún nick contiene «{{ q }}».</p>
+{% else %}
+  <ul class="matches">
+    {% for m in matches %}{% include "_match.html" %}{% endfor %}
+  </ul>
+{% endif %}
+
+<footer class="muted">Se actualiza cada 30 s · <a href="/e/{{ event.id }}/tv">Modo tele</a></footer>
+{% endblock %}

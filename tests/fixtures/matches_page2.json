@@ -1,0 +1,71 @@
+{
+  "next_page_number": null,
+  "results": [
+    {
+      "table_number": 31,
+      "player_match_relationships": [
+        {
+          "player_order": 1,
+          "player": {
+            "id": 5,
+            "best_identifier": "Eva V"
+          },
+          "user_event_status": {
+            "best_identifier": "LuxLight",
+            "matches_won": 1,
+            "matches_lost": 0,
+            "matches_drawn": 0,
+            "total_match_points": 3
+          }
+        },
+        {
+          "player_order": 2,
+          "player": {
+            "id": 6,
+            "best_identifier": "Fer W"
+          },
+          "user_event_status": {
+            "best_identifier": "DariusDunk",
+            "matches_won": 0,
+            "matches_lost": 0,
+            "matches_drawn": 1,
+            "total_match_points": 1
+          }
+        }
+      ],
+      "status": "COMPLETE",
+      "winning_player": null,
+      "games_won_by_winner": 1,
+      "games_won_by_loser": 1,
+      "match_is_intentional_draw": false,
+      "match_is_unintentional_draw": true,
+      "match_is_bye": false
+    },
+    {
+      "table_number": null,
+      "player_match_relationships": [
+        {
+          "player_order": 1,
+          "player": {
+            "id": 7,
+            "best_identifier": "Gus X"
+          },
+          "user_event_status": {
+            "best_identifier": "SoloBye",
+            "matches_won": 1,
+            "matches_lost": 0,
+            "matches_drawn": 0,
+            "total_match_points": 3
+          }
+        }
+      ],
+      "status": "COMPLETE",
+      "winning_player": 7,
+      "games_won_by_winner": 0,
+      "games_won_by_loser": 0,
+      "match_is_intentional_draw": false,
+      "match_is_unintentional_draw": false,
+      "match_is_bye": true
+    }
+  ]
+}

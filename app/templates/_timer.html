@@ -1,0 +1,7 @@
+{% if seconds_left is not none %}
+<div class="timer {% if not event.timer_running %}paused{% endif %}"
+     data-seconds="{{ seconds_left }}" data-running="{{ 'true' if event.timer_running else 'false' }}">
+  <span class="timer-value">--:--</span>
+  {% if not event.timer_running %}<span class="timer-label">en pausa</span>{% endif %}
+</div>
+{% endif %}

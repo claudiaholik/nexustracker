@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body_class %}tv{% endblock %}
+{% block title %}{{ event.name }} · TV{% endblock %}
+{% block content %}
+<header class="top">
+  <div>
+    <h1>{{ event.name }}</h1>
+    <p class="muted">{% if round %}Ronda {{ round.number }}{% else %}Esperando emparejamientos{% endif %}</p>
+  </div>
+  {% include "_timer.html" %}
+</header>
+<ul class="matches grid">
+  {% for m in matches %}{% include "_match.html" %}{% endfor %}
+</ul>
+{% endblock %}

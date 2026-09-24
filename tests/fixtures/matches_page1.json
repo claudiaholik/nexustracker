@@ -1,0 +1,85 @@
+{
+  "next_page_number": 2,
+  "results": [
+    {
+      "table_number": 30,
+      "player_match_relationships": [
+        {
+          "player_order": 1,
+          "player": {
+            "id": 1,
+            "best_identifier": "Ana R"
+          },
+          "user_event_status": {
+            "best_identifier": "KitsuneAhri",
+            "matches_won": 1,
+            "matches_lost": 0,
+            "matches_drawn": 0,
+            "total_match_points": 3
+          }
+        },
+        {
+          "player_order": 2,
+          "player": {
+            "id": 2,
+            "best_identifier": "Beto S"
+          },
+          "user_event_status": {
+            "best_identifier": "TeemoMain",
+            "matches_won": 1,
+            "matches_lost": 0,
+            "matches_drawn": 0,
+            "total_match_points": 3
+          }
+        }
+      ],
+      "status": "COMPLETE",
+      "winning_player": 1,
+      "games_won_by_winner": 2,
+      "games_won_by_loser": 1,
+      "match_is_intentional_draw": false,
+      "match_is_unintentional_draw": false,
+      "match_is_bye": false
+    },
+    {
+      "table_number": 29,
+      "player_match_relationships": [
+        {
+          "player_order": 1,
+          "player": {
+            "id": 3,
+            "best_identifier": "Carla T"
+          },
+          "user_event_status": {
+            "best_identifier": "Jinxed",
+            "matches_won": 0,
+            "matches_lost": 1,
+            "matches_drawn": 0,
+            "total_match_points": 0
+          }
+        },
+        {
+          "player_order": 2,
+          "player": {
+            "id": 4,
+            "best_identifier": "Dani U"
+          },
+          "user_event_status": {
+            "best_identifier": "VolibearHug",
+            "matches_won": 0,
+            "matches_lost": 1,
+            "matches_drawn": 0,
+            "total_match_points": 0
+          }
+        }
+      ],
+      "status": "IN_PROGRESS",
+      "winning_player": null,
+      "games_won_by_winner": 0,
+      "games_won_by_loser": 0,
+      "match_is_intentional_draw": false,
+      "match_is_unintentional_draw": false,
+      "match_is_bye": false
+    }
+  ]
+}

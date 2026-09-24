@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="home">
+  <h1>Riftbuilder</h1>
+  <p class="muted">Pairings de tu evento de Riftbound, en el móvil.</p>
+  <form action="/" method="get">
+    <label for="event">Enlace o número del evento</label>
+    <input id="event" name="event" inputmode="url" autocomplete="off"
+           placeholder="locator.riftbound.uvsgames.com/events/948273" required>
+    <button type="submit">Ver pairings</button>
+  </form>
+  {% if error %}<p class="error">No reconozco ese enlace. Pega la URL del evento del locator.</p>{% endif %}
+</main>
+{% endblock %}

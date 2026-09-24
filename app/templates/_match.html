@@ -1,0 +1,14 @@
+<li class="match {% if m.is_finished %}done{% endif %}">
+  <div class="table">{% if m.is_bye %}BYE{% else %}Mesa<strong>{{ m.table }}</strong>{% endif %}</div>
+  <div class="players">
+    {% for p in [m.player_a, m.player_b] if p %}
+    <div class="player {% if m.winner_nick == p.nick %}winner{% endif %}">
+      <span class="nick">{{ p.nick }}</span>
+      <span class="record">{{ p.record }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% if m.is_finished %}
+  <div class="result">{% if m.is_draw %}Empate{% elif m.score %}{{ m.score }}{% endif %}</div>
+  {% endif %}
+</li>
